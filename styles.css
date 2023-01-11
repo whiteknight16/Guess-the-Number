@@ -149,3 +149,18 @@ h2 {
     height: 100%;
     background: #adb5bd;
 }
+
+/* Mobile Optimisation */
+@media only screen and (max-width:600px) {
+    h1{
+        font-size: 1.5em;
+    }
+    .foreground{
+        min-width: fit-content;
+        min-height: max-content;
+        height: 80vw;
+        width: 80vw;
+        margin-bottom:10%;
+    }
+    
+}
