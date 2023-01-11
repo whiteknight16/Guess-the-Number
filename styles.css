@@ -161,6 +161,23 @@ h2 {
         height: 80vw;
         width: 80vw;
         margin-bottom:10%;
+        
+    }
+
+    #win{
+
+        min-width: fit-content;
+        min-height: max-content;
+        height: 80vw;
+        width: 80vw;
+        margin-bottom:10%;
+    }
+    #loss{
+        min-width: fit-content;
+        min-height: max-content;
+        height: 80vw;
+        width: 80vw;
+        margin-bottom:10%;
     }
     
 }
