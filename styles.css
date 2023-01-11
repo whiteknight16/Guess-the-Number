@@ -1,0 +1,151 @@
+/* imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    border: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: poppins, sans-serif;
+}
+
+/* Background Prop */
+.background {
+    background-color: #3E497A;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+/* Foreground Prop */
+
+.foreground {
+    display: block;
+    background-color: #f0f0f0;
+    width: 70vmin;
+    height: 60vmin;
+    border-style: dashed;
+    border-color: red;
+    border-width: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.title {
+    color: #f1d00a;
+    display: block;
+}
+
+.btn {
+    margin-left: 40%;
+    padding-top: 1rem;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 13px;
+    background: #f1d00a;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #000000;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+/* input box */
+input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+h2 {
+    padding-top: 1rem;
+    padding-bottom: 2%;
+}
+
+#guessedNumber {
+    padding-top: 2rem;
+
+}
+
+
+/* win and lost */
+#loss {
+    position: relative;;
+    background-color: #f50202fd;
+    width: 70vmin;
+    height: 60vmin;
+    border-style: dashed;
+    border-color: black;
+    border-width: 4px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    display: none;
+}
+
+#win{
+    position: relative;;
+    background-color: rgb(10, 240, 10);
+    width: 70vmin;
+    height: 60vmin;
+    border-style: dashed;
+    border-color: black;
+    border-width: 4px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    display: none;
+    
+}
+
+.css-button-sliding-to-left--sand {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #adb5bd;
+    color: #adb5bd;
+}
+
+.css-button-sliding-to-left--sand:hover {
+    color: #fff;
+}
+
+.css-button-sliding-to-left--sand:hover:after {
+    width: 100%;
+}
+
+.css-button-sliding-to-left--sand:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #adb5bd;
+}

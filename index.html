@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <!-- External Css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="background">
+        <h1 class="title">Guess The Number From 1-100</h1><br>
+        <div class="foreground">
+            <h2>Enter your Guess:</h2>
+            <form action="" onsubmit="return false">
+            <input type="number" name="Guess" placeholder="Enter your Guess">
+            <button class="btn" type="submit">Guess</button>
+            <div id="guessedNumber">Guessed Numbers:</div>
+            <div id="tries">Tries left:</div>
+        </form>
+        </div>
+        <div id="win">
+            <h1>You Won</h1>
+            <button class="css-button-sliding-to-left--sand">Click to restart</button>
+        </div>
+
+        <div id="loss">
+            <h1>You Lost</h1>
+            <button class="css-button-sliding-to-left--sand">Click to restart</button>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
