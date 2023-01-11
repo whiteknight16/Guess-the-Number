@@ -36,6 +36,7 @@ $(".btn").click(function () {
     if (guess == randomNumber) {
         correctSound.play();
         $(".foreground").css("display", "none");
+        $("#win h3").text(`The Number was:${randomNumber}`)
         $("#win").css("display", "flex");
         $('.css-button-sliding-to-left--sand').click(function () {
             location.reload();
