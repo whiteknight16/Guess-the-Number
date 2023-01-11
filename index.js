@@ -6,7 +6,6 @@ let tries = 5;
 const errorSound = new Audio("./assests/error.mp3");
 const correctSound = new Audio("./assests/correct.mp3");
 const gameEnd = new Audio("./assests/end.mp3");
-console.log(randomNumber);
 
 // Intializing Tries
 $("#tries").text("Tries left:" + tries + " ");
