@@ -181,3 +181,35 @@ h2 {
     }
     
 }
+/* Small Size Moblies */
+
+@media only screen and (max-width:350px) {
+    h1{
+        font-size: 1.3em;
+    }
+    .foreground{
+        min-width: fit-content;
+        min-height: max-content;
+        height: 52vh;
+        width: 50vh;
+        margin-bottom:10%;
+        
+    }
+
+    #win{
+
+        min-width: fit-content;
+        min-height: max-content;
+        height: 52vh;
+        width: 50vh;
+        margin-bottom:10%;
+    }
+    #loss{
+        min-width: fit-content;
+        min-height: max-content;
+        height: 52vh;
+        width: 50vh;
+        margin-bottom:10%;
+    }
+    
+}
