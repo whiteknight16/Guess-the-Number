@@ -12,6 +12,7 @@ $("#tries").text("Tries left:" + tries + " ");
 
 
 $(".btn").click(function () {
+    errorSound.pause()
     let guess = ($("input").val());
     if (guess != randomNumber) {
         errorSound.play();
