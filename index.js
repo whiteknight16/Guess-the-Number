@@ -1,5 +1,5 @@
 // Genertate random number 
-let randomNumber = Math.floor((Math.random() * 100) + 1);
+let randomNumber = Math.floor((Math.random() * 10) + 1);
 let guessedList = [];
 let tries = 5;
 // Game Sound Load
@@ -26,7 +26,9 @@ $(".btn").click(function () {
         errorSound.pause()
         gameEnd.play();
         $(".foreground").css("display", "none");
+        $("#loss h3").text(`The Number was:${randomNumber}`)
         $("#loss").css("display", "flex");
+        
         $('.css-button-sliding-to-left--sand').click(function () {
             location.reload();
         });
