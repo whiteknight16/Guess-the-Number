@@ -190,8 +190,8 @@ h2 {
     .foreground{
         min-width: fit-content;
         min-height: max-content;
-        height: 52vh;
-        width: 50vh;
+        height: 50vh;
+        width: 45vh;
         margin-bottom:10%;
         
     }
@@ -200,15 +200,15 @@ h2 {
 
         min-width: fit-content;
         min-height: max-content;
-        height: 52vh;
-        width: 50vh;
+        height: 50vh;
+        width: 45vh;
         margin-bottom:10%;
     }
     #loss{
         min-width: fit-content;
         min-height: max-content;
-        height: 52vh;
-        width: 50vh;
+        height: 50vh;
+        width: 45vh;
         margin-bottom:10%;
     }
     
