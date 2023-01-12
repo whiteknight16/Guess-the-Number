@@ -16,6 +16,9 @@ $(".btn").click(function () {
     let guess = ($("input").val());
     if (guess != randomNumber) {
         errorSound.play();
+        $("input").addClass("error");
+        $("input").removeClass("error");
+        
         tries--;
         guessedList.push(guess);
         $("#guessedNumber").text("Guessed Numbers: " + guessedList);
@@ -26,7 +29,7 @@ $(".btn").click(function () {
         errorSound.pause()
         gameEnd.play();
         $(".foreground").css("display", "none");
-        $("#loss h3").text(`The Number was:${randomNumber}`)
+        $("#loss h3").text(`The Number was:${randomNumber}`);
         $("#loss").css("display", "flex");
         
         $('.css-button-sliding-to-left--sand').click(function () {

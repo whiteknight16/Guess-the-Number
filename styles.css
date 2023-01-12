@@ -81,7 +81,8 @@ h2 {
 
 /* win and lost */
 #loss {
-    position: relative;;
+    position: relative;
+    ;
     background-color: #f50202fd;
     width: 70vmin;
     height: 60vmin;
@@ -95,8 +96,9 @@ h2 {
     display: none;
 }
 
-#win{
-    position: relative;;
+#win {
+    position: relative;
+    ;
     background-color: rgb(10, 240, 10);
     width: 70vmin;
     height: 60vmin;
@@ -108,7 +110,7 @@ h2 {
     justify-content: center;
     flex-flow: column;
     display: none;
-    
+
 }
 
 .css-button-sliding-to-left--sand {
@@ -150,66 +152,95 @@ h2 {
     background: #adb5bd;
 }
 
+/* test */
+.error {
+    animation: shake 0.2s ease-in-out 0s 2;
+    box-shadow: 0 0 0.5em red;
+}
+
+@keyframes shake {
+    0% {
+        margin-left: 0rem;
+    }
+
+    25% {
+        margin-left: 0.5rem;
+    }
+
+    75% {
+        margin-left: -0.5rem;
+    }
+
+    100% {
+        margin-left: 0rem;
+    }
+}
+
 /* Mobile Optimisation */
 @media only screen and (max-width:600px) {
-    h1{
+    h1 {
         font-size: 1.5em;
     }
-    .foreground{
+
+    .foreground {
         min-width: fit-content;
         min-height: max-content;
         height: 80vw;
         width: 80vw;
-        margin-bottom:10%;
-        
+        margin-bottom: 10%;
+
     }
 
-    #win{
+    #win {
 
         min-width: fit-content;
         min-height: max-content;
         height: 80vw;
         width: 80vw;
-        margin-bottom:10%;
+        margin-bottom: 10%;
     }
-    #loss{
+
+    #loss {
         min-width: fit-content;
         min-height: max-content;
         height: 80vw;
         width: 80vw;
-        margin-bottom:10%;
+        margin-bottom: 10%;
     }
-    
+
 }
+
 /* Small Size Moblies */
 
 @media only screen and (max-width:350px) {
-    h1{
+    h1 {
         font-size: 1.3em;
     }
-    .foreground{
+
+    .foreground {
         min-width: fit-content;
         min-height: max-content;
         height: 50vh;
         width: 45vh;
-        margin-bottom:10%;
-        
+        margin-bottom: 10%;
+
     }
 
-    #win{
+    #win {
 
         min-width: fit-content;
         min-height: max-content;
         height: 50vh;
         width: 45vh;
-        margin-bottom:10%;
+        margin-bottom: 10%;
     }
-    #loss{
+
+    #loss {
         min-width: fit-content;
         min-height: max-content;
         height: 50vh;
         width: 45vh;
-        margin-bottom:10%;
+        margin-bottom: 10%;
     }
-    
+
 }
